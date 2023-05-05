@@ -1,0 +1,28 @@
+<p>movieid works!</p>
+
+<div class="container">
+  <p class="text-center h3">{{director}}</p>
+  <div class="row">
+    <div class="col-2">
+      <div *ngFor="let item of moviearr">
+        <p class="p-3">{{item.MovieName}}</p>
+
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="text-center d-flex  justify-content-center">
+
+        <video  width="560" height="315" controls muted src="{{vid}}">
+          <track default kind="subtitles" srclang="en" src="/build/videos/arcnet.io(7-sec).mp4"/>
+        </video>
+      </div>
+    </div>
+    <div class="col-2">
+      <div *ngFor="let item of actors">
+        <p class="p-2">{{item}}</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>

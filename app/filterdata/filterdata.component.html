@@ -1,0 +1,16 @@
+<p>filterdata works!</p>
+<div class="container">
+  <h3>Filter data by Driectorsname</h3>
+  <select class="form-select" aria-label="Default select example" (change)="dir($event)">
+    <option selected>Open this select menu</option>
+    <option *ngFor="let item of filterdata.Directors">{{item}}</option>
+
+  </select>
+
+  <h3>Filter data by Moviename</h3>
+  <select class="form-select" aria-label="Default select example" (change)="img($event)">
+    <option selected>Open this select menu</option>
+    <option *ngFor="let item of filterdata.Movies">{{item.MovieName}}</option>
+
+  </select>
+</div>
